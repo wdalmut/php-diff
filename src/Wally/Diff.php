@@ -87,7 +87,7 @@ class Diff
      * @param string $s2 Second String 
      * @return string
      */
-    public function diff($s1, $s2)
+    public function getDiff($s1, $s2)
     {
         $s1 = explode("\n", $s1);
         $s2 = explode("\n", $s2);
