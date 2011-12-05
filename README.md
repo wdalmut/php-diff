@@ -1,5 +1,5 @@
-My Diff
-=======
+Wally Diff
+==========
 
 ```php
 <?php
@@ -9,7 +9,7 @@ use Wally\Diff;
 
 $m = new Diff();
 
-echo $m->diff('Hi, my name is Walter','Hi, my name is Laura');
+echo $m->getDiff('Hi, my name is Walter','Hi, my name is Laura');
 ```
 
 The output is:
@@ -19,3 +19,50 @@ The output is:
 + Hi, my name is Laura
 ```
 
+Complex input
+-------------
+
+See a more complex example:
+
+```php
+echo $m->getDiff(<<<EOF
+Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Mauris ullamcorper nisi at enim adipiscing vehicula. 
+Pellentesque accumsan rutrum porta. 
+Sed interdum tortor urna, et condimentum orci. 
+Vivamus condimentum ultricies justo vitae lobortis. 
+Suspendisse blandit consectetur pulvinar. 
+Ut vitae mauris quis enim convallis elementum. 
+Vestibulum id dictum nisl.
+EOF
+,<<<EOF
+Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Mauris ullamcorper nisi at enim adipiscing vehicula. 
+Pellentesque accumsan rutrum porta. 
+Sed interdum cake urna, et condimentum orci. 
+Vivamus condimentum ultricies justo vitae lobortis. 
+Suspendisse blandit consectetur plumbe. 
+Ut vitae mauris quis enim convallis elementum. 
+Vestibulum id dictatum nisl.
+EOF
+);
+```
+
+The output is:
+
+```
+  Lorem ipsum dolor sit amet, 
+  consectetur adipiscing elit. 
+  Mauris ullamcorper nisi at enim adipiscing vehicula. 
+  Pellentesque accumsan rutrum porta. 
+- Sed interdum tortor urna, et condimentum orci. 
++ Sed interdum cake urna, et condimentum orci. 
+  Vivamus condimentum ultricies justo vitae lobortis. 
+- Suspendisse blandit consectetur pulvinar. 
++ Suspendisse blandit consectetur plumbe. 
+  Ut vitae mauris quis enim convallis elementum. 
+- Vestibulum id dictum nisl.
++ Vestibulum id dictatum nisl.
+```

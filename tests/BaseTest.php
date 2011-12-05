@@ -7,7 +7,7 @@ class BaseTest extends PHPUnit_Framework_TestCase
     {
         $n = @new \Wally\Diff;
 
-        $diff = trim($n->diff("abcdefghi", "abcdefghi"));
+        $diff = trim($n->getDiff("abcdefghi", "abcdefghi"));
         
         $this->assertEquals("abcdefghi", $diff);
     }
