@@ -25,6 +25,7 @@ Complex input
 See a more complex example:
 
 ```php
+<?php
 echo $m->getDiff(<<<EOF
 Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
