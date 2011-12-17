@@ -1,5 +1,4 @@
-Wally Diff
-==========
+# Wally Diff [![Build Status](https://secure.travis-ci.org/wdalmut/php-diff.png)](http://travis-ci.org/wdalmut/php-diff?branch=master)
 
 ```php
 <?php
@@ -19,8 +18,7 @@ The output is:
 + Hi, my name is Laura
 ```
 
-Complex input
--------------
+## Complex input
 
 See a more complex example:
 
