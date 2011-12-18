@@ -1,4 +1,4 @@
-# Wally Diff [![Build Status](https://secure.travis-ci.org/wdalmut/php-diff.png)](http://travis-ci.org/wdalmut/php-diff?branch=master)
+# Wally Diff ![Project Status](http://stillmaintained.com/wdalmut/php-diff.png)  - [![Build Status](https://secure.travis-ci.org/wdalmut/php-diff.png)](http://travis-ci.org/wdalmut/php-diff?branch=master)
 
 ```php
 <?php
