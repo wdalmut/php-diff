@@ -1,0 +1,32 @@
+{
+    "name": "wdalmut/diff",
+    "description": "LSM - Longest Common Subsequence",
+    "version":"1.0.0",
+    "type":"library",
+    "keywords":["lsm","longest","common","subsequence"],
+    "time":"2012-09-04",
+    "license":"MIT",
+    "authors": [
+        {
+            "name":"Walter Dal Mut",
+            "email":"walter.dalmut@corley.it",
+            "homepage":"http://walterdalmut.com",
+            "role":"Developer"
+        }
+    ],
+    "support": {
+        "email":"walter.dalmut@gmail.com"
+    },
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": ["src/"]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/wdalmut/php-diff.git"
+        }
+    ]
+}
